@@ -1,0 +1,71 @@
+html {
+    box-sizing: border-box; /* width и height включают в себя значения полей и границ */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit; /* наследует от html */
+    margin: 0; /* Убирает отступы по умолчанию */
+}
+
+body {
+    min-width: 320px; /* body не адаптируется под ширину экрана менее 1000px */
+    background-color: #f9f9f9; /* основной цвет фона */
+    font-family: "Arial", sans-serif; /* основной шрифт */
+    font-size: 16px; /* основной размер шрифта */
+    line-height: 1.5; /* высота линии для всего документа */
+    color: #000; /* основной цвет шрифта */
+}
+
+body.modal-active {
+    overflow: hidden;
+}
+
+body.modal-active {
+    overflow: hidden; /* скрывает лишнее */
+}
+
+img {
+    max-width: 100%; /* растягивает картинку на всю ширину родительского элемента */
+}
+
+a {
+    text-decoration: none; /* убирает подчеркивание ссылки */
+    color: inherit; /* позволяет наследовать цвет шрифта от родительского элемента */
+}
+
+li {
+    display: inline; /* располагает пункты горизонтально */
+}
+
+.visually-hidden { /* доступно скрывает элемент */
+    position: absolute; 
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+.container { 
+    max-width: 1040px;
+    min-width: 320px; /* ширина основного контента */
+    margin: 0 auto;
+    padding: 0 20px; /* центрирование */
+}
+
+.clearfix:after { /* лечит нулевую высоту div при использовании параметра float */
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+}

@@ -1,0 +1,174 @@
+.footer {
+    background-color: #00122f;
+    color: #fff;   
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-top: 55px;
+
+    margin-bottom: 45px;
+}
+
+.footer-center {
+    max-width: 166px;
+    margin-left: 199px;
+}
+
+.footer-nav {
+    display: flex;
+    max-width: 248px;
+    line-height: 2;
+}
+
+.footer-nav-list {
+    padding: 0;
+    margin: 0;
+    column-count: 2;
+    column-gap: 50px;
+    word-break: break-all;
+}
+
+.footer-nav-elements {
+    display: block;
+
+    margin-bottom: 9px;
+}
+
+.footerLogo {
+    display: block;
+    margin-bottom: 18px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    padding: 0;
+    margin: 0;
+}
+
+.social {
+    margin-left: 165px;
+}
+
+.social-media {
+    margin: 0 0 38px;
+    padding: 0;
+}
+
+.social-media-elements {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.social-media-elements:last-child {
+    margin-right: 0;
+}
+
+.SMLink {
+    height: 40px;
+    width: 40px;
+    display: block;
+}
+
+.vk {
+    background-image: url(../img/vk.png)
+}
+
+.fb {
+    background-image: url(../img/fb.png)
+}
+
+.tw {
+    background-image: url(../img/tw.png)
+}
+
+.ig {
+    background-image: url(../img/ig.png)
+}
+
+.contacts {
+    margin: 0;
+    padding: 0;
+
+    max-width: 182px;
+}
+
+.contactElements {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.contactElements:last-child {
+    margin: 0;
+}
+
+.tel {
+    padding-left: 34px;
+    background: url(../img/call.png) no-repeat;
+    background-position: left center;
+}
+
+.e-mail {
+    padding-left: 34px;
+    background: url(../img/email.png) no-repeat;
+    background-position: left center;
+}
+
+.sign {
+    font-size: 14px;
+    color: #727882;
+    padding: 18px 0;
+    border-top: 1px solid #26354e;
+}
+
+.sign-text {
+    margin: 0 auto;
+    max-width: 362px;
+}
+
+@media (max-width: 576px) {
+    .footer-container {
+        padding: 40px 20px 0;
+    }
+
+    .footer-nav {
+        max-width: none;
+        width: 100%;
+        padding-bottom: 20px;
+        border-bottom: 1px solid white;
+    }
+    
+    .footer-center {
+        padding-top: 30px;
+        margin-left: 0;
+        max-width: none;
+    }
+
+    .social {
+        margin-left: 0;
+    }
+
+    .info {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    .info li {
+        flex-basis: 50%;
+        
+    }
+
+    .info li:last-child {
+        margin-bottom: 0;
+    }
+
+    .sign {
+        padding: 18px 20px;
+    }
+}
